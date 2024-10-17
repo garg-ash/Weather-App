@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+.weather_box {
+  height: 550px;
+  width: 400px;
+  border-radius: 15px;
+  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  margin: 50px auto;
+  padding: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.heading h1 {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.weather_search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.weather_search input {
+  width: 70%;
+  height: 45px;
+  padding-left: 15px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: #333;
+}
+
+.weather_search input::placeholder {
+  color: #888;
+}
+
+.weather_search button {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  border: none;
+  background-color: #00d4ff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.weather_search button:hover {
+  background-color: #009ec3;
+}
+
+.weather_temp_img {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.weather_temp_img img {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.weather_temp_img h2 {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.weather_temp_img h1 {
+  font-size: 1.8rem;
+  color: white;
+}
+
+.humidity_wind {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.humidity, .wind_speed {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.humidity img, .wind_speed img {
+  width: 40px;
+  height: 40px;
+}
+
+.humidity p, .wind_speed p {
+  color: white;
+  font-size: 1rem;
+  margin: 0;
+  text-align: left;
+}
+
+.humidity p:first-child, .wind_speed p:first-child {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
